@@ -4,7 +4,7 @@ const connectDB = (uri) => {
     return mongoose.connect(uri, {
         user: 'hahuynhvan',
         pass: 'VanvaThi123456',
-        autoIndex: false,
+        autoIndex: true,
         dbName: 'QuizGameProject'
     })
 }

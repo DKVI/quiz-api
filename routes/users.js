@@ -8,8 +8,9 @@ const {
     deleteUser,
 } = require('../controllers/users')
 
-//path
+//user route
 router.route('/').get(getAllUsers).post(createNewUsers)
 router.route('/:id').get(getSingleUser).patch(updateUser).delete(deleteUser)
+
 
 module.exports = router

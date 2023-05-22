@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const UserScheme = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     _id: {
         type: Number,
         required: [true, 'must provide id']
@@ -14,4 +14,4 @@ const UserScheme = new mongoose.Schema({
     score: Number
 })
 
-module.exports = mongoose.model('User', UserScheme)
+module.exports = mongoose.model('User', UserSchema)
