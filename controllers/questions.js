@@ -14,10 +14,10 @@ const getAllQuestions = asyncWrapper(async(req, res, next) => {
             [content]: {$regex: value, $option: 'i'}
         }
     }
-    let result = Question.find({queryObject})
+    let result = Question.find(queryObject)
     if(field) {
-        field.split(',').join(' ')
-        result = result.select(field)
+        const fieldList = field.split(',').join(' ')
+        result = result.select(fieldList)
     }
     const question = await result
     res.status(201).json({question})

@@ -1,0 +1,46 @@
+[
+    {
+      "name": "Trường khóa chính là trường",
+      "answers": [
+        {
+          "id": "A",
+          "content": "Single Key"
+        },
+        {
+          "id": "B",
+          "content": "Unique Key"
+        },
+        {
+          "id": "C",
+          "content": "First Key "
+        },
+        {
+          "id": "D",
+          "content": "Primary Key"
+        }
+      ],
+      "correct": "D"
+    },
+    {
+      "name": "Câu nào trong các câu dưới đây sai khi nói về hệ CSDL khách-chủ",
+      "answers": [
+        {
+          "id": "A",
+          "content": "Trong kiến trúc khách-chủ, các thành phần (của hệ QTCSDL) tương tác với nhau tạo nên hệ thống gồm thành phần yêu cầu tài nguyên và thành phần cấp tài nguyên"
+        },
+        {
+          "id": "B",
+          "content": "Hai thành phần yêu cầu tài nguyên và thành phần cấp tài nguyên phải cài đặt trên cùng một máy tính"
+        },
+        {
+          "id": "C",
+          "content": "Thành phần cấp tài nguyên thường được cài đặt tại một máy chủ trên mạng (cục bộ)"
+        },
+        {
+          "id": "D",
+          "content": "Thành phần yêu cầu tài nguyên có thể cài đặt tại nhiều máy khác (máy khách) trên mạng"
+        }
+      ],
+      "correct": "B"
+    }
+]

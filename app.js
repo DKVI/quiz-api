@@ -11,7 +11,7 @@ const errorHandler = require('./middleware/error-handler')
 app.use(express.json())
 //routes
 app.use('/api/v1/users', users)
-app.use('api/v1/questions', questions)
+app.use('/api/v1/questions', questions)
 app.use(notFound)
 app.use(errorHandler)
 

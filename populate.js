@@ -2,18 +2,19 @@
 const User = require('./models/Users')
 const Question = require('./models/Questions')
 const connectDB = require('./db/connect')
+const questionsJson = require('./questions.json')
 
 require('dotenv').config()
-const start = async(uri) => {
+const start = async() => {
     try {
         await connectDB(process.env.MONGO_URI) 
         
         // user
-        await User.deleteMany()
-        await User.create()
+        // await User.deleteMany()
+        // await User.create()
         // question
         await Question.deleteMany()
-        await Question.create()
+        await Question.create(questionsJson)
 
         console.log('Connect Success!');
         process.exit(0)
